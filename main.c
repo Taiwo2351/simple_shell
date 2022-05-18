@@ -1,4 +1,9 @@
-#include <stdio.h>
+/*
+ * File: main.c
+ * Authors: Ukonu, Divine Chisom
+ *          Nobert Patrick
+ */
+
 #include "shell.h"
 
 void sig_handler(int sig);
@@ -15,7 +20,7 @@ void sig_handler(int sig)
 	(void)sig;
 	signal(SIGINT, sig_handler);
 	write(STDIN_FILENO, new_prompt, 3);
-
+}
 
 /**
  * execute - Executes a command in a child process.
@@ -133,4 +138,3 @@ int main(int argc, char *argv[])
 	free_alias_list(aliases);
 	return (*exe_ret);
 }
-
