@@ -278,6 +278,6 @@ $
 ```
 
 ## Authors :
-* Taiwo Idowu 
+* Idowu Taiwo
 * John Eze:
 
